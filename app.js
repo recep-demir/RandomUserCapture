@@ -36,7 +36,6 @@ document.getElementById('add-user').addEventListener('click', () => {
                 </div>
             </div>`;
 
-// localstoragedan verilen parse edilerek çekilmesi. Bu işlem localstoragedan gelen veri string olduğu için yapılmaktadır.
         let savedUsers = JSON.parse(localStorage.getItem('savedUsers')) || [];
         savedUsers.push(a);
         localStorage.setItem('savedUsers', JSON.stringify(savedUsers));
